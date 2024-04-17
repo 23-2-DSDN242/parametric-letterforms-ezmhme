@@ -60,7 +60,7 @@ function draw () {
 
   // draw the letters A, B, C from saved data
   drawLetter(center_x/5, center_y-100, letterA);
-  // drawLetter(center_x, center_y, letterB);
+  //drawLetter(center_x, center_y, letterB);
   // drawLetter(center_x, center_y, letterC);
 }
 
@@ -74,11 +74,19 @@ function drawLetter(posx, posy, letterData) {
   fill(yellow);
   noStroke();
   triangle(posx+10, posy+200, pos2x-10, pos2y+200, 245, 130);
+  fill(yellow);
+  arc(pos2x+50, pos2y+40, 200, 115, 4.71, 1.57, CHORD);
+  arc(pos2x+50, pos2y+140, 200, 115, 4.71, 1.57, CHORD);
   fill(thistle);
   triangle(posx+80, posy+200, pos2x-80, pos2y+200, 245, 240);
   // square(posx, posy, 200);
   //fill(lightGreen);
   //square(pos2x, pos2y, size2);
+  arc(pos2x+55, pos2y+40, 100, 50, 4.71, 1.57, CHORD);
+  arc(pos2x+55, pos2y+140, 100, 50, 4.71, 1.57, CHORD);
+  // fill(yellow);
+  // arc(pos2x+50, pos2y+50, 180, 130, 4.71, 1.57, CHORD);
+  // arc(pos2x+50, pos2y+150, 180, 130, 4.71, 1.57, CHORD);
 }
 
 function keyTyped() {
