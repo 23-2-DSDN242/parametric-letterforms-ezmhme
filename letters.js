@@ -5,14 +5,16 @@ const alphabet = {
     "offsety": 0
   },
   "A": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "x1": 75,
+    "y1": 0,
+    "x2": 25,
+    "y2": 200
   },
   "B": {
-    "size": 75,
-    "offsetx": 0,
-    "offsety": -70
+    "bx1": 0,
+    "by1": 0,
+    "x2": 75,
+    "y2": 0
   },
   "C": {
     "size": 50,
