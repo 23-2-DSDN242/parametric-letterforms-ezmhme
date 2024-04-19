@@ -37,12 +37,20 @@ function drawLetter(letterData) {
   // fill(lavender);
   // quad(0, 0, 50, 0, 100, 200, 50, 200); //letter x
 
-  let quadx = letterData["x1"];
-  let quady = letterData["y1"];
-  let quadx2 = letterData["x2"];
-  let quady2 = letterData["y2"];
+  let quadx = letterData["ax"];
+  let quady = letterData["ay"];
+  let quadx2 = letterData["ax2"];
+  let quady2 = letterData["ay2"];
+
   let quadbx = letterData["bx1"];
   let quadby = letterData["by1"];
+
+  let lettercarc = letterData["cx"];
+  let letterarcstart = letterData["carcstart"];
+  let letterarcstop = letterData["carcstop"];
+  let letterarcstart2 = letterData["carcstart2"];
+  let letterarcstop2 = letterData["carcstop2"];
+
 
 
   fill(thistle)
@@ -51,7 +59,17 @@ function drawLetter(letterData) {
   fill(lavender)
   quad(quadx, quady, quadx2, quady, quadx2*2, quady2, quady2/2, quady2); //letter a
 
-  quad(quadbx, quadby, quadbx+50, quadby, quadbx+50, quadby+200, quadbx, quadby+200); 
+  fill(thistle)
+  arc(quadbx+50, 150, 100, 100, 4.71, 1.57, CHORD);
+  arc(quadbx+50, 50, 100, 100, 4.71, 1.57, CHORD);
+  fill(lavender)
+  quad(quadbx, quadby, quadbx+50, quadby, quadbx+50, quadby+200, quadbx, quadby+200); //letter b
+
+  fill(thistle)
+  arc(lettercarc+10, lettercarc, lettercarc+30, lettercarc*2, letterarcstart, letterarcstop, CHORD);
+  arc(lettercarc+10, lettercarc*3, lettercarc+30, lettercarc*2, letterarcstop, letterarcstart, CHORD);
+  fill(lavender)
+  arc(lettercarc, lettercarc+50, lettercarc+50, lettercarc+150, letterarcstop2, letterarcstart2, CHORD); //letter c
 }
 
 function interpolate_letter(percent, oldObj, newObj) {

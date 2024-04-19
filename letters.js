@@ -5,21 +5,28 @@ const alphabet = {
     "offsety": 0
   },
   "A": {
-    "x1": 75,
-    "y1": 0,
-    "x2": 25,
-    "y2": 200
+    "ax": 75,
+    "ay": 0,
+    "ax2": 25,
+    "ay2": 200,
+    "x3": 0,
+    "carcstop2": 0
   },
   "B": {
     "bx1": 0,
     "by1": 0,
-    "x2": 75,
-    "y2": 0
+    "x2": 0,
+    "y2": 0,
+    "x3": 0,
+    "carcstop2": 0
   },
   "C": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "cx": 50,
+    "cy": 0,
+    "carcstart": 3.15,
+    "carcstop": 0,
+    "carcstart2": 4.71,
+    "carcstop2": 1.57
   },
   "D": {
     "size": 50,
