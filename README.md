@@ -2,7 +2,7 @@
 # MDDN 242 2024 Assignment 2
 ## Geometry Font - Emerson Hemingway
 
-Each of my letters is composed of two arcs and two quads. The size and position of the arcs and quads are controlled by twenty-eight parameters. I desired to create a typeface that captured aesthetic influence and inspiration from geometric forms, incorporating sharp corners and curved shapes. 
+Each of my letters is composed of two arcs and two quads. The size and position of the arcs and quads are controlled by twenty-eight parameters. I desired to create a typeface that captured aesthetic influence and inspiration from geometric forms, incorporating sharp corners and curved shapes in each letter/number.
 
 ### The twenty-eight parameters per letter:
   * `1quadx` : Controls the first x-coordinate of the first quad
@@ -62,4 +62,4 @@ I wanted a colour palette that matched the geometric appearance of my letterform
 ![alt text](<preview.jpg>)
 
 ## Reflection
-In the event that I botched my intial coding of draw_letters.js and letters.js, it did mean that I had to restart my whole alphabet again, this unfortunately meant that I didn't have the chance to spend as much time as I woudl've liked to work on interpolation but I am pleased with the way it performs using the default interpolation system. 
+In the event that I botched my intial coding of draw_letters.js and letters.js, it did mean that I had to restart my whole alphabet again, this unfortunately meant that I didn't have the chance to spend as much time as I woudl've liked to work on interpolation but I am pleased with the way it performs using the default interpolation system. Due to wanting to use quads and arcs, which include a lot of parameters, this meant that I did use more than the desired amount of parameters as stated in the brief. This use of many parameters meant that I couldn't add a colour parameter, causing the 'grey' shapes of my letters to be slightly inconsistent. If I were able to I would've liked to have the largest part of each letter to have been grey. In place of this matter I included grey accents in each letter that was initially only white. In all other respects this project was enjoyable and taught me a lot of new coding techniques. I am very pleased with the final outcome of my font and feel that I captured the geometric aesthetic I desired for efficiently.
