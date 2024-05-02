@@ -65,22 +65,24 @@ function drawLetter(posx, posy, letterData) {
 
   noStroke();
   fill(lavender)
-  triangle(posx+10, posy+200, pos2x-10, pos2y+200, 245, 130);
+  triangle(posx+10, posy+200, pos2x-10, pos2y+200, 245, 130); //letter a large triangle
   
   fill(lavender)
   arc(pos2x+50, pos2y+40, 200, 115, 4.71, 1.57, CHORD);
-  arc(pos2x+50, pos2y+140, 200, 115, 4.71, 1.57, CHORD);
+  arc(pos2x+50, pos2y+140, 200, 115, 4.71, 1.57, CHORD); //letter b large arcs
   
   fill(thistle);
-  triangle(posx+80, posy+200, pos2x-80, pos2y+200, 245, 240);
+  triangle(posx+80, posy+200, pos2x-80, pos2y+200, 245, 240); //letter a small triangle
 
   arc(pos2x+55, pos2y+40, 100, 50, 4.71, 1.57, CHORD);
-  arc(pos2x+55, pos2y+140, 100, 50, 4.71, 1.57, CHORD);
+  arc(pos2x+55, pos2y+140, 100, 50, 4.71, 1.57, CHORD); //letter b small arcs
 
   fill(lavender)
   arc(780, 250, 300, 225, 1.57, 4.71, CHORD);
   fill(thistle)
-  quad(780, 275, 780, 225, 700, 225, 700, 275);
+  quad(780, 275, 780, 225, 700, 225, 700, 275); // letter c arc and quad
+
+  //I coded my sketch entirely wrong so essentially my sketch was just for initial concept visualisation
 }
 
 function keyTyped() {

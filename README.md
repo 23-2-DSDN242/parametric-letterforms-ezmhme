@@ -1,5 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/xQz3oEP8)
-## MDDN 242 2024 Assignment 2
+# MDDN 242 2024 Assignment 2
+## Geometry Font - Emerson Hemingway
 
 Each of my letters is composed of two arcs and two quads. The size and position of the arcs and quads are controlled by twenty-eight parameters. I desired to create a typeface that captured aesthetic influence and inspiration from geometric forms, incorporating sharp corners and curved shapes. 
 
@@ -51,3 +52,5 @@ At this point I continued adding small details to ensure each of my letters incl
 ![alt text](<preview (9).jpg>)
 After completing all my letterforms, I input all of my parameters into the interaction system to have the letters interpolate smoothly.
 
+![alt text](<preview (11).jpg>)
+Final exhibition display of font title.
