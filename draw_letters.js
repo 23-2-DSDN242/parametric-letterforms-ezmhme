@@ -1,12 +1,12 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#ffe736";
+var systemBackgroundColor = "#ffe736"; //yellow
 var systemLineColor = "#000000";
 var systemBoxColor = "#000000";
 
 /* internal constants */
 const grey = "#b3b3b3";
 const white  = "#ffffff";
-const strokeColor  = "#000000";
+const strokeColor  = "#000000"; //colours used in project
 
 /*
  * Draw the letter given the letterData
@@ -16,24 +16,10 @@ const strokeColor  = "#000000";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
-  // color/stroke setup
-  // stroke(strokeColor);
-  // strokeWeight(2);
-
-  // // determine parameters for second circle
-  // let size2 = letterData["size"];
-  // let pos2x = 50  + letterData["offsetx"];
-  // let pos2y = 150 + letterData["offsety"];
-
-  // // draw two circles
-  // fill(lavender);
-  // ellipse(50, 150, 75, 75);
-  // fill(thistle);
-  // ellipse(pos2x, pos2y, size2, size2); //og code
-
   strokeWeight(1)
   angleMode(DEGREES)
 
+  //determined parameters for each letter
   let quad1x = letterData["1quadx"];
   let quad1y = letterData["1quady"];
   let quad2x = letterData["2quadx"];
@@ -64,14 +50,12 @@ function drawLetter(letterData) {
   let arc2End = letterData["arcEnd2"];
 
   fill(white)
-
   arc(arc1x, arc1y, arc2x, arc2y, arcEnd, arcStart, PIE);
-  arc(arc1x2, arc1y2, arc2x2, arc2y2, arc2Start, arc2End, PIE)
+  arc(arc1x2, arc1y2, arc2x2, arc2y2, arc2Start, arc2End, PIE) //drawing 2 arcs of letters
+  quad(quad1x2, quad1y2, quad2x2, quad2y2, quad3x2, quad3y2, quad4x2, quad4y2); //drawing white quad
 
-  quad(quad1x2, quad1y2, quad2x2, quad2y2, quad3x2, quad3y2, quad4x2, quad4y2);
-  
   fill(grey)
-  quad(quad1x, quad1y, quad2x, quad2y, quad3x, quad3y, quad4x, quad4y);
+  quad(quad1x, quad1y, quad2x, quad2y, quad3x, quad3y, quad4x, quad4y); //drawing grey quad
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
@@ -110,5 +94,9 @@ function interpolate_letter(percent, oldObj, newObj) {
 var swapWords = [
   "GEOMETRY",
   "?SHAPES?",
-  "EMERSON!"
+  "EMERSON!",
+  "PARALLEL",
+  "POSITIVE",
+  "SYMMETRY",
+  "VARIABLE"
 ]

@@ -4,7 +4,7 @@
 
 Each of my letters is composed of two arcs and two quads. The size and position of the arcs and quads are controlled by twenty-eight parameters. I desired to create a typeface that captured aesthetic influence and inspiration from geometric forms, incorporating sharp corners and curved shapes. 
 
-The twenty-eight parameters per letter:
+### The twenty-eight parameters per letter:
   * `1quadx` : Controls the first x-coordinate of the first quad
   * `1quady` : Controls the frist y-coordinate of the first quad
   * `2quadx` : Controls the second x-coordinate of the first quad
@@ -54,3 +54,11 @@ After completing all my letterforms, I input all of my parameters into the inter
 
 ![alt text](<preview.jpg>)
 Final exhibition display of font title.
+
+## Experimentation of varying colour palettes
+![alt text](<Screenshot (245).png>) 
+![alt text](<Screenshot (247).png>) 
+![alt text](<Screenshot (246).png>)
+
+## Reflection
+In the event that I botched my intial coding of draw_letters.js and letters.js, it did mean that I had to restart my whole alphabet again, this unfortunately meant that I didn't have the chance to spend as much time as I woudl've liked to work on interpolation but I am pleased with the way it performs using the default interpolation system. 
