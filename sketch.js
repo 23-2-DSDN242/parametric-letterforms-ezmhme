@@ -31,20 +31,13 @@ const letterC = {
 }
 
 const backgroundColor  = "#f5e6e8";
-
-const yellow  = "#aaa1c8";
-const lightGreen  = "#30dfc4";
-const strokeColor  = "#0a2d27";
+const lavender  = "#aaa1c8";
 const thistle = "#d5c6e0";
 
 function setup () {
   // create the drawing canvas, save the canvas element
   main_canvas = createCanvas(canvasWidth, canvasHeight);
   main_canvas.parent('canvasContainer');
-
-  // color/stroke setup
-  stroke(strokeColor);
-  strokeWeight(4);
 
   // with no animation, redrawing the screen is not necessary
   noLoop();
@@ -61,7 +54,7 @@ function draw () {
   // draw the letters A, B, C from saved data
   drawLetter(center_x/5, center_y-100, letterA);
   //drawLetter(center_x, center_y, letterB);
-  // drawLetter(center_x, center_y, letterC);
+  //drawLetter(center_x, center_y, letterC);
 }
 
 function drawLetter(posx, posy, letterData) {
@@ -70,23 +63,24 @@ function drawLetter(posx, posy, letterData) {
   let pos2x = posx + letterData["offsetx"];
   let pos2y = posy + letterData["offsety"];
 
-  // draw two circles
-  fill(yellow);
   noStroke();
+  fill(lavender)
   triangle(posx+10, posy+200, pos2x-10, pos2y+200, 245, 130);
-  fill(yellow);
+  
+  fill(lavender)
   arc(pos2x+50, pos2y+40, 200, 115, 4.71, 1.57, CHORD);
   arc(pos2x+50, pos2y+140, 200, 115, 4.71, 1.57, CHORD);
+  
   fill(thistle);
   triangle(posx+80, posy+200, pos2x-80, pos2y+200, 245, 240);
-  // square(posx, posy, 200);
-  //fill(lightGreen);
-  //square(pos2x, pos2y, size2);
+
   arc(pos2x+55, pos2y+40, 100, 50, 4.71, 1.57, CHORD);
   arc(pos2x+55, pos2y+140, 100, 50, 4.71, 1.57, CHORD);
-  // fill(yellow);
-  // arc(pos2x+50, pos2y+50, 180, 130, 4.71, 1.57, CHORD);
-  // arc(pos2x+50, pos2y+150, 180, 130, 4.71, 1.57, CHORD);
+
+  fill(lavender)
+  arc(780, 250, 300, 225, 1.57, 4.71, CHORD);
+  fill(thistle)
+  quad(780, 275, 780, 225, 700, 225, 700, 275);
 }
 
 function keyTyped() {
