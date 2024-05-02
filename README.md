@@ -52,5 +52,5 @@ At this point I continued adding small details to ensure each of my letters incl
 ![alt text](<preview (9).jpg>)
 After completing all my letterforms, I input all of my parameters into the interaction system to have the letters interpolate smoothly.
 
-![alt text](<preview (11).jpg>)
+![alt text](<preview.jpg>)
 Final exhibition display of font title.
