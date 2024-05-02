@@ -15,7 +15,7 @@ const sliderInfo = [
   // ["2Arcy", 0, 100],
   // ["arcStart", 0, 360],
   // ["arcEnd", 0, 360],
-  // ["arcSize", 0, 100]
+  // ["arcSize", 0, 100] //attempted to use editor but couldn't get working
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
