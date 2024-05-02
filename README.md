@@ -52,13 +52,14 @@ At this point I continued adding small details to ensure each of my letters incl
 ![alt text](<preview (9).jpg>)
 After completing all my letterforms, I input all of my parameters into the interaction system to have the letters interpolate smoothly.
 
-![alt text](<preview.jpg>)
-Final exhibition display of font title.
-
-## Experimentation of varying colour palettes
+### Experimentation of varying colour palettes
 ![alt text](<Screenshot (245).png>) 
 ![alt text](<Screenshot (247).png>) 
 ![alt text](<Screenshot (246).png>)
+I wanted a colour palette that matched the geometric appearance of my letterforms but found this experimentation too intense so ended up opting for a more 'neutral' looking palette that still matched my geometric aesthetic.
+
+### Final exhibition display of font title
+![alt text](<preview.jpg>)
 
 ## Reflection
 In the event that I botched my intial coding of draw_letters.js and letters.js, it did mean that I had to restart my whole alphabet again, this unfortunately meant that I didn't have the chance to spend as much time as I woudl've liked to work on interpolation but I am pleased with the way it performs using the default interpolation system. 
